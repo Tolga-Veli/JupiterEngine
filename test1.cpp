@@ -45,13 +45,6 @@ int main() {
 
   glViewport(0, 0, 800, 600);
 
-  float vertices[] = {
-      // Positions         // Colors
-      0.0f,  0.5f,  0.0f, 1.0f, 0.0f, 0.0f, // Top (Red)
-      0.5f,  -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, // Bottom Right (Green)
-      -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f  // Bottom Left (Blue)
-  };
-
   unsigned int vert_shader = glCreateShader(GL_VERTEX_SHADER);
   glShaderSource(vert_shader, 1, &vertexShaderSource, NULL);
   glCompileShader(vert_shader);
@@ -81,6 +74,12 @@ int main() {
               << infoLog << std::endl;
   }
 
+  float vertices[] = {
+      // Positions         // Colors
+      0.0f,  0.5f,  0.0f, 1.0f, 0.0f, 0.0f, // Top (Red)
+      0.5f,  -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, // Bottom Right (Green)
+      -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f  // Bottom Left (Blue)
+  };
   unsigned int VBO, VAO;
   glGenVertexArrays(1, &VAO);
   glGenBuffers(1, &VBO);

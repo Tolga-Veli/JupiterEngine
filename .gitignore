@@ -3,4 +3,7 @@ stylua.toml
 .clangd
 .gitmodules
 .git
-.vscode
+.vscode/
+build/
+.cache/
+compile_commands.json

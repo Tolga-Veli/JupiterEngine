@@ -1,11 +1,7 @@
-#include "Application.hpp"
-
-Jupiter::Core::Application *Jupiter::Core::CreateApplication() {
-  return new Jupiter::Core::Application();
-}
+#include "Core/Application.hpp"
 
 int main() {
-  auto app = Jupiter::Core::CreateApplication();
+  auto app = new Jupiter::Core::Application();
   app->Run();
   delete app;
 }
