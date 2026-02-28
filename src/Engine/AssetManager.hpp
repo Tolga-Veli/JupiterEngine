@@ -30,6 +30,7 @@ public:
 
 private:
   fs::path m_AssetsDir;
+
   static AssetManager *s_Instance;
 
   std::unordered_map<std::string, std::shared_ptr<Renderer::Texture2D>>

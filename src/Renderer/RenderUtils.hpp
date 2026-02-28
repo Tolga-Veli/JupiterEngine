@@ -10,7 +10,7 @@ static inline constexpr u32 GetSizeOfType(u32 type) {
   case GL_FLOAT:
     return sizeof(float);
   case GL_UNSIGNED_INT:
-    return sizeof(u32);
+    return sizeof(unsigned int);
   case GL_UNSIGNED_BYTE:
     return sizeof(unsigned char);
   default:

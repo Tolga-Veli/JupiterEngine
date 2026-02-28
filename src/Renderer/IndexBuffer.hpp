@@ -24,7 +24,7 @@ public:
   u32 GetCount() const { return m_Count; }
 
 private:
-  u32 m_IndexBufferID;
-  std::size_t m_Count;
+  u32 m_IndexBufferID = 0;
+  std::size_t m_Count = 0;
 };
 }; // namespace Jupiter::Renderer
